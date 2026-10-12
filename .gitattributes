@@ -1,0 +1,12 @@
+# 文本文件统一用 LF，避免跨平台换行噪音
+* text=auto
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.ini  text eol=lf
+*.lua  text eol=lf
+
+# 示例资产与源表是二进制，禁止任何换行转换
+*.uasset binary
+*.umap   binary
+*.xlsx   binary
