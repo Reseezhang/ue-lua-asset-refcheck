@@ -1,7 +1,8 @@
 # 我给 UE 项目写了个"资源点名器"：检查 Lua 引用的资源到底存不存在
 
-> 工具已开源：`ue-lua-asset-refcheck`。零依赖、只读磁盘、不启动引擎，
-> 既能查「写的资源在不在」，也能反查「改这个资源会牵到谁」。
+> 工具已开源：<https://github.com/Reseezhang/ue-lua-asset-refcheck>。
+> 零依赖、只读磁盘、不启动引擎，既能查「写的资源在不在」，
+> 也能反查「改这个资源会牵到谁」。
 
 ## 起因：一种不会报错的错误
 
@@ -249,7 +250,7 @@ python refcheck.py query   # 反向：改它会牵到谁
 6. **给候选，别只给结论。** 未命中时给出"同目录最相近的真实资源"，
    能省掉大量人工翻找——实测大量问题是改名搬迁，而不是资源消失。
 
-工具开源在 GitHub：**`ue-lua-asset-refcheck`**，MIT 协议。
+工具开源在 GitHub：**<https://github.com/Reseezhang/ue-lua-asset-refcheck>**，MIT 协议。
 仓库里带了一个可跑的示例工程（合成数据），不用准备 UE 工程就能看到效果：
 
 ```bash
